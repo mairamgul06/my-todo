@@ -1,0 +1,55 @@
+.ListTodo{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 40px 40px;
+    background: rgba(33, 142, 244, 0.334);
+    border-radius: 4px;
+    padding: 0;
+
+    &Label{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    &Check{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    &Title{
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+    &Titlecheck{
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 20px;
+        color: rgba(230, 15, 72, 0.973);
+        text-decoration: line-through;
+    }
+    &Edit, &Remove, &Save{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: none;
+        transition: opacity 0.3s;
+        font-size: 18px;
+        color: rgba(230, 15, 72, 0.973);
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    &New{
+        margin-left: 20px;
+        border: none;
+        border-bottom: 2px solid rgba(22, 128, 226, 0.973);
+        background: none;
+        outline: none;
+        max-width: 400px;
+        width: 100%;
+        font-size: 16px; 
+    }
+}

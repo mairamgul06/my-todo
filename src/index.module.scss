@@ -1,0 +1,46 @@
+.Todo{
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+   
+    &Title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    &Text{
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:500px){
+
+    .Todo{
+        &Title{
+            font-size: 24px;
+        }
+        &Text{
+            font-size: 16px;
+        }
+    }
+
+}
+@media (max-width:321px) {
+
+    .Todo{
+        &Title{
+            font-size: 18px;
+        }
+        &Text{
+            font-size: 14px;
+        }
+    }
+    
+    
+}
